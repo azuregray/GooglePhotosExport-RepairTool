@@ -1,3 +1,29 @@
+'''
+------------------------------------------------------------- DOCUMENTATION STARTS HERE
+
+[SCRIPT NAME]           GooglePhotosExport-RepairTool.py
+
+[SOURCE REPO @ GITHUB]  https://github.com/azuregray/GooglePhotosExport-RepairTool
+
+[SCRIPT DEPENDENCIES]   Independent Script (No External Script Dependencies);
+
+[DESCRIPTION]           This tool deals with a problem while exporting large data from
+                        Google Photos that most of the EXIF & Image Edits data will be
+                        stripped to a companion file. This simple interactive tool helps
+                        remerge some of the information into the source images files to
+                        preserve date-based order while dealing with huge data exports.
+
+[LIBRARIES USED]        os, json, tkinter.filedialog, posixpath, time.sleep
+
+[FUNCTIONS]             coreEngine(workingPath)  -->  MAIN FUNCTION
+
+[NOTE]                  1. Main Section is optimized for better UX, while using with CLI. Just make sure to be a bit patient.
+                        2. The script accepts a root directory and works its way down recursively through all folders.
+                        3. Its is recommended to have an isolated workspace set for operation which does not contain any other importantfiles.
+
+------------------------------------------------------------- DOCUMENTATION ENDS HERE
+'''
+
 def coreEngine(workingPath):
     foundFilesList = os.listdir(workingPath)
     imageFilesList = [file for file in foundFilesList if (not file.endswith('.json')) and (not file.endswith('.py'))]
@@ -36,7 +62,6 @@ if __name__ == '__main__':
     sleep(0.8)
     
     rootPath = fd.askdirectory(title="Choose Root Directory to start operation.")
-    # rootPath = os.path.dirname(__file__).replace('\\', '/')
     
     os.system('cls')
     print(":::::::: Scanning for accessible folders containing your media... ::::::::\n\n")
