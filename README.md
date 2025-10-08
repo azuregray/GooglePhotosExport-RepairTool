@@ -23,7 +23,7 @@ python GooglePhotosExport-RepairTool.py
 
 > The script accepts a root directory and works its way down recursively through all folders.
 
-> Its is recommended to have an isolated workspace set for operation which does not contain any other importantfiles.
+> Its is recommended to have an isolated workspace set for operation which does not contain any other important files.
 
 ---
 
