@@ -4,7 +4,7 @@
 
 > My Identity >>  [**`Github`**](https://github.com/azuregray/)
 
-#### An interactive python-based CLI tool to re-merge EXIF Date-oreder information of Google Photos takeout/exported media.
+#### **``[ DESCRIPTION ]``** &ensp; An interactive python-based CLI tool to re-merge EXIF Date-oreder information of Google Photos takeout/exported media.
 ---
 - **How to run ⚙️**
 
