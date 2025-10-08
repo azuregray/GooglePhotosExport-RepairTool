@@ -19,7 +19,7 @@
 
 [NOTE]                  1. Main Section is optimized for better UX, while using with CLI. Just make sure to be a bit patient.
                         2. The script accepts a root directory and works its way down recursively through all folders.
-                        3. Its is recommended to have an isolated workspace set for operation which does not contain any other important files.
+                        3. It is recommended to have an isolated workspace set for operation which does not contain any other important files.
 
 ------------------------------------------------------------- DOCUMENTATION ENDS HERE
 '''
